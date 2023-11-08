@@ -40,9 +40,9 @@ def join(session, game, job):
             [2] No
             """)))
             if res == 1:
-                return
+                await join()
             else:
-                break
+                return
 
 def main():
     print(pystyle.Center.XCenter("""
