@@ -20,6 +20,7 @@ def join(session, game, job):
     if attempt > 5:
         print("Rate limit has been reached! Please fix your Roblox player before trying again.")
         return
+    attempt = 0
 
     session.add_cookie({'name': '.ROBLOSECURITY', 'value': find()})
     session.get(f"roblox://game/PlaceLauncher.aspx?placeId={str(game)}&gameId={str(job) or 0}")
