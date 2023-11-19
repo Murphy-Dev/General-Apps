@@ -20,7 +20,7 @@ class Program {
   }
   public static void Main(string[] args) {
     // Getting Cores
-    if (args.GetLength() < 1)
+    if (args.GetLength() < 2)
     {
       Console.WriteLine("This program needs 1 argument");
     }
@@ -40,7 +40,7 @@ class Program {
 
     for (int i = 0; i < THREADS; i++) 
     {
-      stress(args[0], packload);
+      stress(args[1], packload);
     }
     
   }
